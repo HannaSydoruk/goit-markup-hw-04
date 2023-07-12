@@ -414,7 +414,7 @@ a.currnet-color {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-icons {
@@ -457,13 +457,11 @@ a.currnet-color {
   color: var(--lightslate);
 }
 
-.customer-logo:hover,
-.customer-logo:focus,
-.customer-logo:active {
+.customer-logo:is(:hover, :focus) {
   color: var(--ocean);
   border-color: var(--ocean);
-  transition: color 250ms cubic-bezier(0.4 0 0.2 1),
-    border-color 250ms cubic-bezier(0.4 0 0.2 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customer-icon-description {
@@ -528,6 +526,7 @@ a.currnet-color {
 }
 
 .templates-link {
+  display: block;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -540,7 +539,7 @@ a.currnet-color {
   transform: translateY(0);
 }
 
-.item:hover {
+.templates-link:hover {
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
@@ -623,7 +622,7 @@ a.currnet-color {
   justify-content: center;
   background-color: var(--iris);
   border-radius: 50%;
-  transition: background-color 250ms cubic-bezier(0.4 0 0.2 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-social-items {
