@@ -251,7 +251,7 @@ a.currnet-color {
 }
 
 .hero-button {
-  background: var(-iris);
+  background-color: var(--iris);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
